@@ -1,0 +1,25 @@
+/*,
+    {
+      path: '/HelloWorld',
+      name: 'HelloWorld',
+      component: HelloWorld
+    },
+    {
+      path: '/ListTasks',
+      name: 'ListTasks',
+      component: ListTasks
+    }*/
+	
+	import App from '@/App'
+	
+	  mode: 'history',
+  base: __dirname,
+  
+  ,
+        { path: 'CreateTask', component: CreateTask }
+		
+		{path: '/', component: Main, children: [
+        { path: '', component: HelloWorld },
+        { path: 'ListTasks', component: ListTasks }
+      ]
+    }
